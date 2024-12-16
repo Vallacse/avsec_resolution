@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Resolution Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>New Year Resolution 2025</h1>
+        <form name="resForm" id="resolutionForm" onsubmit="handleFormSubmit(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="department">Your Department:</label>
+            <input type="text" id="department" name="department" required placeholder="Enter your department">
+            
+            <label for="resolution">Your Resolution:</label>
+            <textarea id="resolution" name="resolution" required placeholder="Write your New Year resolution"></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Welcome!</h2>
+            <p id="popupMessage"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
